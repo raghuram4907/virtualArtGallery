@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Art Gallery</title>
+  <style>
+    /* Bright and colorful styles for the page */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+      color: #333;
+    }
+
+    /* Center the gallery on the page */
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* Styling individual art cards */
+    .art-card {
+      width: 250px;
+      margin: 15px;
+      border-radius: 15px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Add hover effect with rotation, zoom, and bright colors */
+    .art-card:hover {
+      transform: scale(1.5);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+      z-index: 20;
+    }
+
+    /* Image styling inside art cards */
+    .art-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Description styling for each art piece */
+    .art-description {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .art-description h3 {
+      margin: 0 0 10px;
+      font-size: 1.4em;
+      color: #ff6f61;
+    }
+
+    .art-description p {
+      font-size: 1em;
+      color: #555;
+    }
+
+    /* Animation for the cards */
+    .art-card {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    .img-style{
+      height: 200px;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Virtual Art Gallery Container -->
+  <div class="gallery-container">
+
+    <!-- Art Card 1 -->
+    <div class="art-card">
+      <img class="img-style" src="C:\Users\asus\Pictures\art-1.jpg">
+      <div class="art-description">
+        <h3>Starry Night</h3>
+        <p>By Vincent van Gogh</p>
+      </div>
+    </div>
+
+    <!-- Art Card 2 -->
+    <div class="art-card">
+      <img class="img-style" src="C:\Users\asus\Pictures\Saved Pictures\art-2.jpeg" alt="Art Piece 2">
+      <div class="art-description">
+        <h3>The Persistence of Memory</h3>
+        <p>By Salvador Dalí</p>
+      </div>
+    </div>
+
+    <!-- Art Card 3 -->
+    <div class="art-card">
+      <img src="C:\Users\asus\Pictures\Saved Pictures\th.jpeg" alt="Art Piece 3">
+      <div class="art-description">
+        <h3>Girl with a Pearl Earring</h3>
+        <p>By Johannes Vermeer</p>
+      </div>
+    </div>
+
+    <!-- Art Card 4 -->
+    <div class="art-card">
+      <img src="C:\Users\asus\Pictures\Saved Pictures\art-4.jpeg" alt="Art Piece 4">
+      <div class="art-description">
+        <h3>Impression, Sunrise</h3>
+        <p>By Claude Monet</p>
+      </div>
+    </div>
+
+    <!-- Art Card 5 -->
+    <div class="art-card">
+      <img src="C:\Users\asus\Pictures\Saved Pictures\art-5.jpeg" alt="Art Piece 5">
+      <div class="art-description">
+        <h3>Mona Lisa</h3>
+        <p>By Leonardo da Vinci</p>
+      </div>
+    </div>
+
+    <!-- Art Card 6 -->
+    <div class="art-card">
+      <img src="C:\Users\asus\Pictures\Saved Pictures\art-6.jpeg" alt="Art Piece 6">
+      <div class="art-description">
+        <h3>The Scream</h3>
+        <p>By Edvard Munch</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
